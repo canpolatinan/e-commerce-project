@@ -9,14 +9,6 @@ HTML ve CSS ile hazırlanmış, modern görünümlü bir e-ticaret sitesi arayü
 
 ---
 
-## 📸 Ekran Görüntüsü
-
-> Siteden bir ekran görüntüsü alıp proje klasörüne `ekran.png` adıyla kaydedersen aşağıdaki satırı açabilirsin:
-
-<!-- ![Site görüntüsü](ekran.png) -->
-
----
-
 ## ✨ Özellikler
 
 - 🔝 Sayfa kaydırılsa da yukarıda sabit kalan üst menü
