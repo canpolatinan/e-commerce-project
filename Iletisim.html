@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Eticaret.css">
+    <script src="script.js" defer></script>
+    <title>İletişim</title>
+</head>
+<body>
+    <header class="ust-alan" id="ust-alan-yer"></header>
+
+    <div class="icerik-alani">
+        <h2 class="bolum-basligi">İletişim</h2>
+
+        <div class="iletisim-duzeni">
+            <div class="iletisim-kart">
+                <div class="iletisim-satiri"><i class="fa-solid fa-location-dot vurgu-ikon"></i> Bingöl, Türkiye</div>
+                <div class="iletisim-satiri"><i class="fa-solid fa-envelope vurgu-ikon"></i> info@eticaret.com</div>
+                <div class="iletisim-satiri"><i class="fa-solid fa-phone vurgu-ikon"></i> 0555 000 00 00</div>
+                <div class="iletisim-satiri"><i class="fa-solid fa-clock vurgu-ikon"></i> Hafta içi 09:00 - 18:00</div>
+            </div>
+
+            <div class="form-kutusu form-ortada iletisim-form">
+                <form id="iletisim-formu" onsubmit="return mesajGonder()">
+                    <label class="form-etiket">Adın</label>
+                    <input type="text" id="ad" class="form-girdi" placeholder="Adın Soyadın">
+
+                    <label class="form-etiket">E-posta</label>
+                    <input type="email" id="eposta" class="form-girdi" placeholder="ornek@mail.com">
+
+                    <label class="form-etiket">Mesajın</label>
+                    <textarea id="mesaj" class="form-girdi form-metin" placeholder="Mesajını yaz..."></textarea>
+
+                    <p class="form-hata" id="hata"></p>
+                    <button class="ana-dugme form-dugme">Gönder</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="alt-bilgi" id="alt-bilgi-yer"></footer>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Eticaret.css">
+    <script src="script.js" defer></script>
+    <title>Yeni Ürün Ekle</title>
+</head>
+<body>
+    <header class="ust-alan" id="ust-alan-yer"></header>
+
+    <div class="icerik-alani">
+        <h2 class="bolum-basligi">Yeni Ürün Ekle</h2>
+
+        <div class="form-kutusu form-ortada">
+            <form id="urun-formu" onsubmit="return urunKaydet()">
+                <label class="form-etiket">Ürün Adı</label>
+                <input type="text" id="urun-ad" class="form-girdi" placeholder="Örn: Kablosuz Mouse">
+
+                <label class="form-etiket">Kategori</label>
+                <select id="urun-kategori" class="form-girdi">
+                    <option value="Teknoloji">Teknoloji</option>
+                    <option value="Telefon">Telefon</option>
+                    <option value="Giyim">Giyim</option>
+                    <option value="Spor">Spor</option>
+                </select>
+
+                <label class="form-etiket">Fiyat (₺)</label>
+                <input type="number" id="urun-fiyat" class="form-girdi" min="1" placeholder="Örn: 499">
+
+                <label class="form-etiket">Açıklama</label>
+                <textarea id="urun-aciklama" class="form-girdi form-metin" placeholder="Ürün hakkında kısa bilgi"></textarea>
+
+                <label class="form-etiket">Ürün Görseli (isteğe bağlı)</label>
+                <input type="file" id="urun-resim-dosya" class="form-girdi" accept="image/*">
+
+                <p class="form-hata" id="hata"></p>
+                <button class="ana-dugme form-dugme">Ürünü Ekle</button>
+            </form>
+        </div>
+
+        <h2 class="bolum-basligi baslik-bosluk">Eklediğim Ürünler</h2>
+        <div id="eklenen-liste"></div>
+    </div>
+
+    <footer class="alt-bilgi" id="alt-bilgi-yer"></footer>
+</body>
+</html>

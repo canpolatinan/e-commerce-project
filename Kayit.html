@@ -3,24 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kayıt Ol</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="Eticaret.css">
+    <script src="script.js" defer></script>
+    <title>Kayıt Ol</title>
 </head>
 <body class="form-sayfasi">
 
     <div class="form-kutusu">
         <h2 class="form-baslik">Kayıt Ol</h2>
 
-        <label class="form-etiket">Ad Soyad</label>
-        <input type="text" class="form-girdi" placeholder="Adınız Soyadınız">
+        <form onsubmit="return kayitOl()">
+            <label class="form-etiket">Ad Soyad</label>
+            <input type="text" id="ad" class="form-girdi" placeholder="Adınız Soyadınız">
 
-        <label class="form-etiket">E-posta</label>
-        <input type="email" class="form-girdi" placeholder="ornek@mail.com">
+            <label class="form-etiket">E-posta</label>
+            <input type="email" id="eposta" class="form-girdi" placeholder="ornek@mail.com">
 
-        <label class="form-etiket">Şifre</label>
-        <input type="password" class="form-girdi" placeholder="Şifre belirleyin">
+            <label class="form-etiket">Şifre</label>
+            <input type="password" id="sifre" class="form-girdi" placeholder="En az 6 karakter">
 
-        <button class="ana-dugme form-dugme">Kayıt Ol</button>
+            <label class="form-etiket">Şifre Tekrar</label>
+            <input type="password" id="sifre-tekrar" class="form-girdi" placeholder="Şifreyi tekrar yazın">
+
+            <p class="form-hata" id="hata"></p>
+            <button class="ana-dugme form-dugme">Kayıt Ol</button>
+        </form>
 
         <p class="form-yazi">Zaten hesabın var mı? <a href="Giris.html" class="form-baglanti">Giriş Yap</a></p>
         <p class="form-yazi"><a href="Eticaret.html" class="form-baglanti">← Ana Sayfaya Dön</a></p>

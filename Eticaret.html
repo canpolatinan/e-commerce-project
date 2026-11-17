@@ -3,43 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Benim Mağazam</title>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="Eticaret.css">
+    <script src="script.js" defer></script>
+    <title>Benim Mağazam</title>
 </head>
 <body>
 
-    <header class="ust-alan">
-        <div class="logo"><i class="fa-solid fa-store vurgu-ikon"></i> E-Ticaret</div>
-
-        <div class="arama-kutusu">
-            <input type="text" class="arama-girdisi" placeholder="Ürün ara...">
-            <button class="arama-dugmesi"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </div>
-
-        <ul class="menu">
-            <li class="menu-ogesi"><a href="Eticaret.html" class="menu-baglantisi"><i class="fa-solid fa-house"></i> Ana Sayfa</a></li>
-
-            <li class="menu-ogesi">
-                <a href="#" class="menu-baglantisi"><i class="fa-solid fa-list"></i> Kategoriler ▼</a>
-                <ul class="acilir-menu">
-                    <li class="acilir-ogesi"><a href="#" class="acilir-baglantisi">Teknoloji</a></li>
-                    <li class="acilir-ogesi"><a href="#" class="acilir-baglantisi">Telefon</a></li>
-                    <li class="acilir-ogesi"><a href="#" class="acilir-baglantisi">Giyim</a></li>
-                    <li class="acilir-ogesi"><a href="#" class="acilir-baglantisi">Spor</a></li>
-                </ul>
-            </li>
-
-            <li class="menu-ogesi"><a href="#" class="menu-baglantisi"><i class="fa-solid fa-basket-shopping"></i> Sepetim</a></li>
-            <li class="menu-ogesi"><a href="#iletisim" class="menu-baglantisi"><i class="fa-solid fa-address-book"></i> İletişim</a></li>
-        </ul>
-
-        <div class="hesap-dugmeleri">
-            <a href="Giris.html" class="giris-dugmesi">Giriş Yap</a>
-            <a href="Kayit.html" class="kayit-dugmesi">Kayıt Ol</a>
-        </div>
-    </header>
+    <header class="ust-alan" id="ust-alan-yer"></header>
 
     <div class="tanitim-alani">
         <h1 class="tanitim-baslik">Yeni Sezon Ürünleri</h1>
@@ -60,89 +31,25 @@
             <i class="fa-solid fa-rotate-left ozellik-ikon"></i>
             <div><b class="ozellik-baslik">Kolay İade</b><span class="ozellik-aciklama">14 gün içinde iade</span></div>
         </div>
-        
     </div>
 
     <div class="icerik-alani" id="urunler">
-        <h2 class="bolum-basligi">Popüler Ürünler</h2>
+        <h2 class="bolum-basligi" id="liste-baslik">Popüler Ürünler</h2>
 
-        <div class="urun-izgarasi">
-
-            <div class="urun-karti">
-                <span class="etiket">İndirim</span>
-                <div class="urun-gorseli"><img src="images/laptop.svg" class="urun-resim" alt="Laptop Standı"></div>
-                <div class="urun-adi">Laptop Standı</div>
-                <div class="yildizlar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
-                <div class="urun-fiyati"><span class="eski-fiyat">₺399</span> ₺299</div>
-                <button class="ana-dugme">İncele</button>
-            </div>
-
-            <div class="urun-karti">
-                <span class="etiket cok-satan">Çok Satan</span>
-                <div class="urun-gorseli"><img src="images/ayakkabi.svg" class="urun-resim" alt="Koşu Ayakkabısı"></div>
-                <div class="urun-adi">Koşu Ayakkabısı</div>
-                <div class="yildizlar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                <div class="urun-fiyati">₺1.299</div>
-                <button class="ana-dugme">İncele</button>
-            </div>
-
-            <div class="urun-karti">
-                <span class="etiket">İndirim</span>
-                <div class="urun-gorseli"><img src="images/kulaklik.svg" class="urun-resim" alt="Kablosuz Kulaklık"></div>
-                <div class="urun-adi">Kablosuz Kulaklık</div>
-                <div class="yildizlar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
-                <div class="urun-fiyati"><span class="eski-fiyat">₺1.199</span> ₺899</div>
-                <button class="ana-dugme">İncele</button>
-            </div>
-
-            <div class="urun-karti">
-                <span class="etiket yeni">Yeni</span>
-                <div class="urun-gorseli"><img src="images/termos.svg" class="urun-resim" alt="Termos Bardak"></div>
-                <div class="urun-adi">Termos Bardak</div>
-                <div class="yildizlar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
-                <div class="urun-fiyati">₺199</div>
-                <button class="ana-dugme">İncele</button>
-            </div>
-
-            <div class="urun-karti">
-                <div class="urun-gorseli"><img src="images/canta.svg" class="urun-resim" alt="Sırt Çantası"></div>
-                <div class="urun-adi">Sırt Çantası</div>
-                <div class="yildizlar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                <div class="urun-fiyati">₺549</div>
-                <button class="ana-dugme">İncele</button>
-            </div>
-
-            <div class="urun-karti">
-                <span class="etiket yeni">Yeni</span>
-                <div class="urun-gorseli"><img src="images/saat.svg" class="urun-resim" alt="Akıllı Saat"></div>
-                <div class="urun-adi">Akıllı Saat</div>
-                <div class="yildizlar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></div>
-                <div class="urun-fiyati">₺1.799</div>
-                <button class="ana-dugme">İncele</button>
-            </div>
-
-            <div class="urun-karti">
-                <span class="etiket cok-satan">Çok Satan</span>
-                <div class="urun-gorseli"><img src="images/telefon.svg" class="urun-resim" alt="Telefon"></div>
-                <div class="urun-adi">Telefon</div>
-                <div class="yildizlar"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
-                <div class="urun-fiyati">₺5.000</div>
-                <button class="ana-dugme">İncele</button>
-            </div>
-
+        <div class="filtre-alani">
+            <div class="kategori-cubugu" id="kategori-cubugu"></div>
+            <select id="siralama" class="siralama-sec" onchange="urunleriGoster()">
+                <option value="">Sıralama: Varsayılan</option>
+                <option value="artan">Fiyat: Düşükten yükseğe</option>
+                <option value="azalan">Fiyat: Yüksekten düşüğe</option>
+            </select>
         </div>
+
+        <div class="urun-izgarasi" id="urun-izgarasi"></div>
+        <div class="bos-mesaj" id="bos-sonuc"><i class="fa-solid fa-magnifying-glass"></i><p>Aradığın ürün bulunamadı.</p></div>
     </div>
 
-    <footer class="alt-bilgi" id="iletisim">
-        <div class="sosyal">
-            <a href="#" class="sosyal-baglanti"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#" class="sosyal-baglanti"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="#" class="sosyal-baglanti"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#" class="sosyal-baglanti"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-        <p class="alt-bilgi-yazi"><i class="fa-solid fa-envelope vurgu-ikon"></i> info@eticaret.com &nbsp; | &nbsp; <i class="fa-solid fa-phone vurgu-ikon"></i> 0555 000 00 00</p>
-        <p class="alt-bilgi-yazi">© 2026 E-Ticaret - Tüm hakları saklıdır.</p>
-    </footer>
+    <footer class="alt-bilgi" id="alt-bilgi-yer"></footer>
 
 </body>
 </html>
